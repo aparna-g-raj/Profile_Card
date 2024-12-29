@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Card</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        }
+
+        /* Card container */
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Profile picture in a circle */
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 15px; /* Center and add spacing below the image */
+            display: block;
+            border: 5px solid #ffffff;
+            background-color: #ffffff;
+        }
+
+        /* Content area */
+        .card-content {
+            padding-top: 10px;
+        }
+
+        .card h2 {
+            margin: 10px 0 5px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .card .details {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Footer for additional style */
+        .card-footer {
+            background: #f9f9f9;
+            padding: 15px;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+        }
+
+        .card-footer a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .card-footer a:hover {
+            color: #0056b3;
+        }
+    </style>    
+</head>
+<body>
+    <div class="card">
+        <!-- Profile image -->
+        <img src="https://tse4.mm.bing.net/th?id=OIP.hGSCbXlcOjL_9mmzerqAbQHaHa&pid=Api&P=0&h=180">
+        <!-- Content -->
+        <div class="card-content">
+            <h2>APARNA G RAJ</h2>
+            <p>SOFTWARE DEVELOPER</p>
+            <p>Btech in Computer Science & Artificial Intelligence</p>
+            <div class="details">
+                <p>Email: agr2k03@gmail.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+        </div>
+        <!-- Footer for links or additional info -->
+        <div class="card-footer">
+            <a href="https://www.linkedin.com/in/aparna-g-raj-abb452260" target="_blank">Connect on LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
